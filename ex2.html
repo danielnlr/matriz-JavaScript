@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function multiplicarMatrizPorN(matriz, n) {
+  const novaMatriz = [];
+
+  for (let i = 0; i < matriz.length; i++) {
+    const novaLinha = [];
+
+    for (let j = 0; j < matriz[i].length; j++) {
+      novaLinha.push(matriz[i][j] * n);
+    }
+
+    novaMatriz.push(novaLinha);
+  }
+
+  return novaMatriz;
+}
+
+// Exemplo de uso:
+const matrizOriginal = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+const n = 2;
+const novaMatriz = multiplicarMatrizPorN(matrizOriginal, n);
+
+console.log("Matriz Original:");
+console.log(matrizOriginal);
+
+console.log(`Nova Matriz (multiplicada por ${n}):`);
+console.log(novaMatriz);
+
+    </script>
+</body>
+</html>

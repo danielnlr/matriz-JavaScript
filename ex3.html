@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var matriz = []
+
+        while(true){ 
+        var nome = prompt("Digite o seu nome do ciente")
+        var email = prompt("Digite o seu email do cliente")
+        var telefone = parseInt(prompt("Digite o seu telefone do cliente"))
+
+        matriz.push( [email,nome,telefone])
+
+        var encerra = parseInt(prompt("Digite 0 para encerrar"))
+        if(encerra == 0){
+        break}
+    }
+    console.log(matriz)
+    </script>
+</body>
+</html>
